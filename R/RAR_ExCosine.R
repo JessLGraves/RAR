@@ -110,7 +110,7 @@ RAR_ExCosine <- function(df, act_column, time_column, transform=c("hill", "antil
     start_cosine = as.data.frame(cbind(mMeanAct, aStartAct))
 
         # Initial Cosine Model
-    cosine <- stats::nls(act_column_log ~  mes + amp*cos((tm/60 - phi)*pi/12), data=df, start=list(amp=aStartAct, mes=mMeanAct, phi=12),
+    cosine <- stats::nls(act_column_log ~  (amp + M) + amp*cos((tm/60 - phi)*pi/12), data=df, start=list(amp=aStartAct, M=mMeanAct, phi=12), control=list(warnOnly=T),
                          algorithm="port", trace=F, lower=c(0, 0, -6), upper=c(Inf, Inf, 30))
 
     # Saving estimates of Initial Cosine Model to use as starting values for Fitted Extended Cosine Model
