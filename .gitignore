@@ -1,6 +1,4 @@
-.Rproj.user
+.DS_Store
 .Rhistory
-.RData
-.Ruserdata
+.Rproj.user/
 .Rd2pdf*
-.Rapp.history

@@ -1,33 +1,36 @@
-Package: RAR
-Title: Parametric, Nonparametric, and Localized RAR Analysis
-Version: 1.0.0
+Package: RARv2
+Type: Package
+Title: RAR: Parametric, Nonparametric, and Localized RAR Analysis
+Version: 2.0.0
 Authors@R: c(person("Jessica", "Graves", email = "jeg143@pitt.edu", role = c("aut", "cre")),
         person("Haoyi", "Fu", email = "haf48@pitt.edu", role = "aut"), 
+        person("Capps", "Chandler", email = "chc289@pitt.edu", role = "aut"), 
         person("Stephen", "Smagula", email = "smagulasf@upmc.edu", role = "aut"),
-        person("Robert", "Krafty", email = "rkrafty@pitt.edu", role="aut"))
-Description: This package offers three methods of analyzing rest-activity rhythms (RARs): sigmoidally transformed extended cosine model, spectrum analysis, and localized measure of RAR. Sigmoidally transformed extended cosine model is adapted from Marler et al. 2006 <doi: 10.1002/sim.2466>. Nonparametric analyses are adapted from van Someren et al. 1996. Localized measures of RAR include the following measures at specified time bins: Mean activity, Standard Deviation of activity, and Relative activity (Graves, 2018).
+        person("Robert", "Krafty", email = "rkrafty@pitt.edu", role="aut"), 
+        person("Martica", "Hall", email = "hallmh@upmc.edu", role="aut")) 
+Maintainer: Jessica Graves <jeg143@pitt.edu>
 Depends: R (>= 3.4.0)
+Description: This package offers three methods of analyzing rest-activity rhythms (RARs): sigmoidally transformed extended cosine models, spectrum analysis, and localized measure of RAR. Sigmoidally transformed extended cosine models are adapted from Marler et al. 2006 <doi: 10.1002/sim.2466>. Localized measures of RAR include the measures of, mean, standard devation, and relative activity and specified time bins (Graves, 2018).
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
-RdMacros: Rdpack
-Imports: nlstools,
+Imports: 
+    magrittr,
     tidyr,
     ggplot2,
     dplyr,
-    dotwhisker,
-    broom,
-    lubridate,
     grDevices,
     methods,
-    nparACT,
     Rdpack,
-    magrittr,
-    kableExtra,
-    knitr,
-    xtable,
     xts,
     astsa,
+    gss,
     mgcv,
-    gss
+    lubridate,
+    broom,
+    dotwhisker,
+    kableExtra,
+    knitr,
+    xtable
 RoxygenNote: 6.1.1
+RdMacros: Rdpack
