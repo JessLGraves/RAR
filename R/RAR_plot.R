@@ -12,6 +12,7 @@
 #' @importFrom ggplot2 element_text
 #'
 #' @examples
+#' \dontrun{
 #' data(age_wise)
 #' d <- age_wise[age_wise$id==29,]
 #' rar_ex <- RAR(d, act, date_time)
@@ -25,6 +26,7 @@
 #' p$plot_act # on natural scale
 #'
 #' p2 <- RAR_plot(rar_ex4, TRUE, c("1", "2"))
+#' }
 
 RAR_plot <- function(rar_output, predicted=c(TRUE, FALSE), id_vals=NULL){
 

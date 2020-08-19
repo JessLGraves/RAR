@@ -15,6 +15,7 @@
 #' @seealso \code{nls}
 #' @references 1. Marler M.R., Gehrman P., Martin J.L., Ancoli-Israel S. (2006) The sigmoidally transformed cosine curve: a mathematical model for circadian rhythms with symmetric non-sinusoidal shapes. Stat Med. Nov 30;25(22):3893-904.
 #' @examples
+#' \dontrun{
 #' data(age_wise)
 #' d <- age_wise[age_wise$id==1,]
 #' rar_ex <- RAR(d, act, date_time)
@@ -28,6 +29,7 @@
 #' rar_ex4$messages # convergence messages for each participant
 #' rar_ex4$df_predicted # dataframe of obseved activity and predicted values
 #' rar_ex4$df_interp # predictions based on interpolated data (i.e. missing data)
+#' }
 
 RAR <- function(df, act_column, time_column, transform=c("antilogit", "arctan", "hill"), id_column=NULL){
 

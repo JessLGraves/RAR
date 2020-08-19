@@ -11,6 +11,7 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' data(age_wise)
 #' d <- age_wise[age_wise$id==1,]
 #' rar_ex <- RAR(d, act, date_time, "antilogit")
@@ -27,6 +28,7 @@
 #' rar_ex4 <- RAR(d4, act, date_time, id_column=id)
 #' spec4 <- RAR_Spectrum(rar_ex4, "pss", TRUE, id)
 #' RAR_SpectrumBands(spec4, fs, TRUE, id) # outputs bands for each participant
+#' }
 
 RAR_SpectrumBands <- function(rar_spectrum, freq.bands, log_transform=c(TRUE, FALSE), id_column=NULL){
 

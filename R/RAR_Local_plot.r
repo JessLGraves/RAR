@@ -11,6 +11,7 @@
 #' @importFrom ggplot2 element_text
 #'
 #' @examples
+#' \dontrun{
 #' data(age_wise)
 #' d <- age_wise[age_wise$id==1,]
 #' local <- RAR_Local(d, act, date_time, 4, TRUE, 6.17) # get localized measures
@@ -25,6 +26,7 @@
 #'
 #' local4.clock <- RAR_Local(d4.2, act, date_time, 4, id_column=id) # clock time, log scale
 #' RAR_Local_plot(local4.clock, id_vals=c("1", "2"))
+#' }
 
 
 RAR_Local_plot <- function(rar_local_object, id_vals=NULL){

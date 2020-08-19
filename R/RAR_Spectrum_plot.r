@@ -11,6 +11,7 @@
 #' @importFrom ggplot2 element_text
 #'
 #' @examples
+#' \dontrun{
 #' data(age_wise)
 #' d <- age_wise[age_wise$id==1,]
 #' rar_ex <- RAR(d, act, date_time)
@@ -22,6 +23,7 @@
 #' rar_ex4 <- RAR(d4, act, date_time, id_column=id)
 #' spec4 <- RAR_Spectrum(rar_ex4, id_column=id)
 #' RAR_Spectrum_plot(spec4, id_vals=c("1", "2")) # log scale, ids 1 and 2
+#' }
 
 
 RAR_Spectrum_plot <- function(rar_spectrum, id_vals=NULL){

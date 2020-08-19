@@ -15,6 +15,7 @@
 #' @importFrom magrittr %>%
 #'
 #' @examples
+#' \dontrun{
 #' data(age_wise)
 #' d <- age_wise[age_wise$id==1,]
 #' rar_ex <- RAR(d, act, date_time)
@@ -31,6 +32,7 @@
 #'
 #' local4.clock <- RAR_Local(d4.2, act, date_time, 4, id_column=id) # clock time, log scale
 #' local4.clock$localized
+#' }
 
 RAR_Local <- function(df, act_column, time_column, hour_bin, log_transform=c(TRUE, FALSE), wake_hr=NULL, id_column=NULL){
 

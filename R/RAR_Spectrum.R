@@ -17,6 +17,7 @@
 #' @references 2. Whittle, P (1953). Estimation and information in stationary time series. Arkiv för matematik, 2(5), 423–434.
 #'
 #' @examples
+#' \dontrun{
 #' data(age_wise)
 #' d <- age_wise[age_wise$id==1,]
 #' rar_ex <- RAR(d, act, date_time)
@@ -30,6 +31,7 @@
 #' spec4 <- RAR_Spectrum(rar_ex4, "pss", TRUE, id)
 #' spec4$spectrum_value
 #' spec4$predict.ss
+#' }
 
 RAR_Spectrum <- function(rar_object, method=c("pss", "whittle"), log_transform=c(TRUE, FALSE), id_column=NULL, ...){
 

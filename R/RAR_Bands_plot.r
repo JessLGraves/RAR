@@ -11,6 +11,7 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' data(age_wise)
 #' d <- age_wise[age_wise$id==1,]
 #' rar_ex <- RAR(d, act, date_time, "antilogit")
@@ -30,6 +31,7 @@
 #' bands_m.4$plots[[1]] # effect of filter from 0, 2/24 (filter [[1]])
 #' bands_m.4$plots[[2]] # effect of filter 2
 #' bands_m.4$plots[[3]] # effect of filter 3
+#' }
 
 RAR_Bands_plot <- function(rar_object, freq.bands, sampling.rate=(1/60), id_vals=NULL){
 
