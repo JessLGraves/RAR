@@ -6,7 +6,7 @@ This package is intended for easy extraction of features of rest activity rhythm
 * Residual Spectrum Analysis: Spectral analysis based on residuals of fitted cosine models
 * Localized Measures: Mean, standard devation, and relative activity measures within user-specified time bins.
 
-## This package is currently under continued development. Version 2 will be published in Spring 2020.
+## Version 2 of this package is currently available here.
 
 ## Installing RAR
 ```
