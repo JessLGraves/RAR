@@ -9,7 +9,8 @@ This package is intended for easy extraction of features of rest activity rhythm
 
 __Sigmoidally transformed extended cosine models__
 
-<img src="https://github.com/JessLGraves/RAR/blob/master/param_ex1.png" width="400">
+
+![](../master/param_ex1.png)
 <sub> <b> Figure 1. </b> 60-second epoch RAR data with fitted antilogistic cosine model (red). Top right: residuals estimated from the fitted anti-logistic model. </sub>
 
 See <a href = "https://onlinelibrary.wiley.com/doi/epdf/10.1002/sim.2466">Marler et al. 2006</a> for a summary of the model structure and parameters estimated from the models. 
