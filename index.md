@@ -67,6 +67,6 @@ local_plots <- RAR_Local_plot(local, id_vals=c("1", "29"))
 - Graves, Jessica L., et al. "Profiles of Accelerometry-Derived Physical Activity Are Related to Perceived Physical Fatigability in Older Adults." Sensors 21.5 (2021): 1718. <a href = "https://www.mdpi.com/1424-8220/21/5/1718"> link </a>
 - Smagula, Stephen F., et al. "Activity patterns related to depression symptoms in stressed dementia caregivers." International psychogeriatrics (2019): 1-8. <a href = "https://www.cambridge.org/core/journals/international-psychogeriatrics/article/abs/activity-patterns-related-to-depression-symptoms-in-stressed-dementia-caregivers/B241BD2B09FEF44A715F2424F7B62294"> link </a>
 
-## See manual.pdf for more information .
+## See [manual.pdf](manual.pdf) for more information .
 
 
