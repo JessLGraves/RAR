@@ -21,7 +21,7 @@ __Residual Circadian Spectrum Analysis__
 <img src="https://github.com/JessLGraves/RAR/blob/master/RAR_Spectrum_bands.png" width="500">
 <sub> <b> Figure 2. </b> Top left: 60-second epoch RAR data with fitted antilogistic cosine model (red). Top right: residuals estimated from the fitted anti-logistic model. Bottom left: estimated log power spectrum of the residuals from the top right panel with a smoothing cubic spline (blue). Bottom right: example of frequency band selection (a, b) to estimate frequency band score.</sub><br>
 <br>
-Spectral analysis is performed on the residuals of derived from the anti-logistic extended cosine model. From there, a user-specified specified band (a, c) for which the area under the smoothed spectrum is estimated. 
+Spectral analysis is performed on the residuals of derived from the anti-logistic extended cosine model. From there, a user-specified band (a, c) for which the area under the smoothed spectrum is estimated. 
 <br>
 
 See <a href = "https://link.springer.com/article/10.1007/s12561-018-09230-2"> Krafty et al. 2019 </a> for methodology underlying residual circadian spectrum analysis and frequency band estimation.
