@@ -35,6 +35,7 @@ __Localized Measures__
 ```
 install_github("JessLGraves/RAR")
 data(age_wise) # example dataset
+
 d <- age_wise
 
 #### Cosine Modeling
@@ -42,11 +43,14 @@ rar_ex <- RAR(d, act, date_time, id_column=id)
 rar_ex$parameters # parameter estimates
 rar_ex$messages # convergence messages for each participant
 rar_ex$df_predicted # dataframe of obseved activity and predicted values
-rar_ex4df_interp # predictions based on interpolated data (i.e. missing data)
+rar_ex$df_interp # predictions based on interpolated data (i.e. missing data)
+
+## Visualizing RAR model
+RAR_plot(rar, id_vals = c(1, 29))$plot_log.act
 
 ### Residual Circadian Spectrum
 spec <- RAR_Spectrum(rar_ex, "pss", TRUE, id)
-RAR_Spectrum_plot(spec, ids=c("1", "29")) # plotting only participants 1 and 29
+RAR_Spectrum_plot(spec, id_vals=c(1, 29)) # plotting only participants 1 and 29
 # Frequency band selection
 f1 <- c(0, 2/24); f2 <- c(2/24, 25); f3 <- c(25, 60)
 fs <- rbind(f1, f2, f3)
@@ -57,10 +61,10 @@ hour_interval <- 4
 local <- RAR_Local(d, act, date_time, hour_interval, id_column=id)
 local$localized # print of mean, sd, relative activity for each 4-hour time interval 
 # plotting mean, sd, and relative activity
-local_plots <- RAR_Local_plot(local, id_vals=c("1", "29"))
-  local_plots$plot_mean
-  local_plots$plot_sd
-  local_plots$plot_rel
+local_plots <- RAR_Local_plot(local, id_vals=c(1, 29))
+local_plots$plot_mean
+local_plots$plot_sd
+local_plots$plot_rel
 ```
 
 
