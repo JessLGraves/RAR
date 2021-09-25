@@ -33,7 +33,8 @@ __Localized Measures__
 
 ## Basics of using RAR
 ```
-install_github("JessLGraves/RAR")
+# install_github("JessLGraves/RAR")
+library(RAR)
 data(age_wise) # example dataset
 
 d <- age_wise
