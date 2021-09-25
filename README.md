@@ -46,7 +46,7 @@ rar_ex4df_interp # predictions based on interpolated data (i.e. missing data)
 
 ### Residual Circadian Spectrum
 spec <- RAR_Spectrum(rar_ex, "pss", TRUE, id)
-RAR_Spectrum_plot(spec, ids=c("1, "29)) # plotting only participants 1 and 29
+RAR_Spectrum_plot(spec, ids=c("1", "29")) # plotting only participants 1 and 29
 # Frequency band selection
 f1 <- c(0, 2/24); f2 <- c(2/24, 25); f3 <- c(25, 60)
 fs <- rbind(f1, f2, f3)
